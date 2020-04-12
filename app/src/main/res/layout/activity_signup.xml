@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".SignupActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/login_Applogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_title"
+        android:gravity="center"
+        android:layout_below="@id/login_Applogo"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="25dp"
+        android:id="@+id/sign_up_title"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/sign_up_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/input_design"
+        android:hint="First Name"
+        android:textColorHint="@color/white"
+        android:padding="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:ellipsize="start"/>
+
+    <EditText
+        android:id="@+id/sign_up_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_first_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_design"
+        android:hint="Last Name"
+        android:textColorHint="@color/white"
+        android:padding="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_action_person"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:ellipsize="start"/>
+
+    <EditText
+        android:id="@+id/sign_up_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_last_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_design"
+        android:hint="Email Address"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:ellipsize="start"/>
+
+
+    <EditText
+        android:id="@+id/sign_up_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_email_input"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
+        android:hint="@string/hint_password"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:ellipsize="start"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_password_input"
+        android:id="@+id/sign_up_button"
+        android:layout_marginTop="40dp"
+        android:text="SignUp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bottons"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="handleCreateuser"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_button"
+        android:id="@+id/sign_up_login_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Already on Let's Meet? Login"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/bottons"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="handleSignuptoLogin"/>
+</RelativeLayout>
+
+</ScrollView>

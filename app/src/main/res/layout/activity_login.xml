@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_Applogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/login_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_Applogo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/input_design"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:ellipsize="start"
+        android:textColorHint="@color/white"/>
+
+
+    <EditText
+        android:id="@+id/login_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_email_input"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:ellipsize="start"
+        android:textColorHint="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_error_status"
+        android:textSize="12dp"
+        android:textColor="#ff0000"
+        android:layout_below="@id/login_password_input"
+        android:visibility="invisible"
+        android:gravity="center_horizontal"
+        />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password_input"
+        android:id="@+id/login_button"
+        android:layout_marginTop="100dp"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bottons"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="handleLogin"/>
+
+    <Button
+        android:id="@+id/forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:onClick="handleForgotPassword"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bottons"
+        android:onClick="handleSignup"
+        android:text="Signup"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

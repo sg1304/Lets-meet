@@ -1,0 +1,66 @@
+{
+  "project_info": {
+    "project_number": "47036547196",
+    "firebase_url": "https://lets-meet-78307.firebaseio.com",
+    "project_id": "lets-meet-78307",
+    "storage_bucket": "lets-meet-78307.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47036547196:android:66ecdaa37be10833",
+        "android_client_info": {
+          "package_name": "com.project.letsmeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47036547196-esft0929eqnhe8ef53b7tpsctmh2hcb4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.letsmeet",
+            "certificate_hash": "078372efbadf43507cd88f1bcee89bab22a15e61"
+          }
+        },
+        {
+          "client_id": "47036547196-9eaaq4mf9r4rk6hbrps0rkusnvj6rgdk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.letsmeet",
+            "certificate_hash": "824b6241d2329256b3d2ca018a3d0ee7db85de01"
+          }
+        },
+        {
+          "client_id": "47036547196-ls2lvb79evg8bshr1p22s9ndn16vohdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCufeqxT4mz7t-c3o_wrfq1HO1zvq-ZDnM"
+        },
+        {
+          "current_key": "AIzaSyCDp3voZs4Kva9Xzh0SXhWjiDHXiwGweHM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47036547196-ls2lvb79evg8bshr1p22s9ndn16vohdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

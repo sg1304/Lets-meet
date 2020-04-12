@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="@dimen/title_bottom_margin"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="Welcome, Thank you for choosing us!"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:theme="@style/ThemeOverlay.MyTitleText" />
+
+    <TextView
+        android:id="@+id/logoText"
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="@dimen/title_bottom_margin"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:text="Let's Meet"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:theme="@style/ThemeOverlay.MyTitleText" />
+
+    <LinearLayout
+        android:id="@+id/emailPasswordButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/emailSignInButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottons"
+            android:onClick="userLogin"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/emailCreateAccountButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottons"
+            android:onClick="userSignUp"
+            android:text="SignUp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+</LinearLayout>
+
+</LinearLayout>
